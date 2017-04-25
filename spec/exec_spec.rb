@@ -4,7 +4,8 @@ require 'facter'
 describe "facter exec" do
 
   before :each do
-    @os = Facter.value('operatingsystem')
+    #@os = Facter.value('operatingsystem')
+    @os = 'Ubuntu'
     @web = Facter.value('lamp_web')
   end
   describe "results" do
